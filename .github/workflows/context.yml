@@ -9,9 +9,7 @@ jobs:
           echo "Action is $MY_ACTION"
           echo "Actor is $MY_ACTOR"
           echo "Actor ID is $MY_ACTOR_ID"
-          echo "Ref is $REF"
         env:
           MY_ACTION: ${{ github.action }} 
           MY_ACTOR: ${{ github.actor }}
           MY_ACTOR_ID: ${{ github.actor_id }}
-          REF: ${{ github.action_ref }}
