@@ -1,11 +1,14 @@
 name: Every Minute Workflow
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "* * * * *"
 
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
