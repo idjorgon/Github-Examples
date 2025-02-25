@@ -1,8 +1,8 @@
-name: Every 2 Minutes Workflow
+name: Every Minute Workflow
 
 on:
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "* * * * *"
 
 jobs:
   build:
@@ -10,6 +10,5 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
       - name: Run a script
-        run: echo "This runs every 2 minutes"
+        run: echo "This runs every minute"
